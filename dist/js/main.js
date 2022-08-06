@@ -234,7 +234,9 @@ const modalPhoneInput = document.querySelectorAll('.modal-phone__input');
 if (modalPhoneLabel && modalPhoneInput) {
   modalPhoneLabel.forEach(item => {
     item.addEventListener('click', () => {
-      item.querySelector('.modal-phone__input').classList.add('show');
+      if (item.querySelector('.modal-phone__input')) {
+        item.querySelector('.modal-phone__input').classList.add('show');
+      }
     });
   });
 }
