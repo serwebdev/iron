@@ -1,0 +1,21 @@
+.steps-wrap {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+}
+.steps-img {
+  max-width: 100%;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+.steps-img--mobile {
+  max-width: 100%;
+  display: none;
+
+  @media (max-width: 700px) {
+    display: block;
+    margin: 0 auto;
+  }
+}

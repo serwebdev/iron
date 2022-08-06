@@ -1,0 +1,30 @@
+<div class="modal modal-phone">
+    <div class="modal__body">
+        <button class="modal__btn">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15.5565" width="2" height="22" rx="1" transform="rotate(45 15.5565 0)" fill="#474747" />
+                <rect x="16.9706" y="15.5563" width="2" height="22" rx="1" transform="rotate(135 16.9706 15.5563)"
+                    fill="#474747" />
+            </svg>
+        </button>
+        <div class="modal__content">
+            <p class="modal-phone__text">Оставьте свой номер телефона и мы вам перезвоним в ближайшее время</p>
+            <form action="#" class="modal-phone__form">
+                <label class="modal-phone__label">
+                    <p class="modal-phone__input-text">Ваше имя <span>*</span></p>
+                    <input type="text" name="name" class="modal-phone__input" required>
+                </label>
+                <label class="modal-phone__label">
+                    <p class="modal-phone__input-text">Ваш номер телефона <span>*</span></p>
+                    <input type="text" name="phone" class="modal-phone__input" required>
+                </label>
+                <input type="checkbox" name="policy-modal-order" class="modal-phone__checkbox"
+                    id="modal-phone__checkbox" checked required>
+                <label class="modal-phone__label modal-phone__label-checkbox" for="modal-phone__checkbox">
+                    Я ознакомлен и соглашаюсь с <a href="#!">политикой конфиденциальности</a>
+                </label>
+                <button type="submit" class="modal-phone__btn btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>

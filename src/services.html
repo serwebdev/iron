@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+
+        @@include('./components/breadcrumbs/_breadcrumbs.html')
+
+        <!-- carve----------------------------------------------------- -->
+        <section class="carve">
+            <div class="container">
+                <h1 class="carve__title h2">Резка металла</h1>
+                <div class="carve__info">
+                    <img src="img/services/carve-icon.svg" alt="Иконка" class="carve__img">
+                    <p class="carve__text">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</p>
+                    <button class="carve__button btn-min">ЗАКАЗАТЬ УСЛУГУ</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- all-carve----------------------------------------------------- -->
+        <section class="all-carve top50">
+            <div class="container">
+                <h2 class="all-carve__title h2">Наша компания предоставляет огромный спектр услуг по резке металла</h2>
+                <p class="all-carve__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam porttitor ut in
+                    cras amet non ut aliquam. Tortor nullam vitae eu diam eget adipiscing semper. Platea natoque ipsum
+                    eu proin. At urna purus sed fusce amet. Laoreet vitae vestibulum in bibendum quis suspendisse.
+                </p>
+                <p class="all-carve__text">Nibh purus sagittis placerat lacus, risus. Turpis dictumst nunc duis erat
+                    habitant. Bibendum libero facilisi sociis dui netus. Sed porta morbi pellentesque condimentum.
+                    Viverra purus mauris semper viverra posuere.</p>
+                <button class="all-carve__button btn-min">ЗАКАЗАТЬ УСЛУГУ</button>
+
+                <div class="all-carve__ul-wrap">
+                    <ul class="ul-list">
+                        <li class="ul-list__list">
+                            <img src="./img/main-page/ul-list-marker.svg" alt="Иконка" class="ul-list__img">
+                            <p class="ul-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                                porttitor
+                                ut in cras amet non ut aliquam.</p>
+                        </li>
+                        <li class="ul-list__list">
+                            <img src="./img/main-page/ul-list-marker.svg" alt="Иконка" class="ul-list__img">
+                            <p class="ul-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                                porttitor
+                                ut in cras amet non ut aliquam nullam vitae eu diam eget adipiscing semper. Platea
+                                natoque
+                                ipsum eu proin.</p>
+                        </li>
+                        <li class="ul-list__list">
+                            <img src="./img/main-page/ul-list-marker.svg" alt="Иконка" class="ul-list__img">
+                            <p class="ul-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                                porttitor
+                                ut in cras amet non ut aliquam nullam vitae eu diam eget adipiscing semper. Platea
+                                natoque
+                                ipsum eu proin.</p>
+                        </li>
+                        <li class="ul-list__list">
+                            <img src="./img/main-page/ul-list-marker.svg" alt="Иконка" class="ul-list__img">
+                            <p class="ul-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                                porttitor
+                                ut in cras amet non ut aliquam.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Swiper -->
+                <div class="all-carve__slider swiper">
+                    <div class="all-carve__slider-wrapper swiper-wrapper">
+                        <div class="all-carve__slider-slide swiper-slide">
+                            <div class="all-carve__slider-img-wrap">
+                                <img src="img/services/all-carve-slide-1.jpg" alt="Товары"
+                                    class="all-carve__slider-img">
+                            </div>
+                        </div>
+                        <div class="all-carve__slider-slide swiper-slide">
+                            <div class="all-carve__slider-img-wrap">
+                                <img src="img/services/all-carve-slide-1.jpg" alt="Товары"
+                                    class="all-carve__slider-img">
+                            </div>
+                        </div>
+                        <div class="all-carve__slider-slide swiper-slide">
+                            <div class="all-carve__slider-img-wrap">
+                                <img src="img/services/all-carve-slide-1.jpg" alt="Товары"
+                                    class="all-carve__slider-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                        <svg width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.295313 14.7684L12.2853 27.6834C12.6781 28.1063 13.3141 28.1056 13.7063 27.6812C14.0982 27.2569 14.0972 26.5695 13.7043 26.1463L2.42799 13.9999L13.7047 1.85368C14.0975 1.4304 14.0985 0.743477 13.7067 0.319103C13.5101 0.106369 13.2526 1.84201e-06 12.995 1.81949e-06C12.7381 1.79704e-06 12.4816 0.105657 12.2853 0.316915L0.295313 13.2316C0.106109 13.4349 -6.26471e-05 13.7116 -6.26723e-05 13.9999C-6.26975e-05 14.2883 0.106413 14.5646 0.295313 14.7684Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.7046 13.2316L1.71467 0.316634C1.32183 -0.106263 0.68582 -0.105552 0.293642 0.318821C-0.0982333 0.74314 -0.0972207 1.4305 0.295667 1.85373L11.5719 14.0001L0.295262 26.1463C-0.0975752 26.5696 -0.0985879 27.2565 0.293236 27.6809C0.489832 27.8936 0.747387 28 1.00494 28C1.26184 28 1.51838 27.8943 1.71462 27.6831L13.7046 14.7684C13.8938 14.5651 14 14.2884 14 14.0001C14 13.7117 13.8935 13.4354 13.7046 13.2316Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- block-video----------------------------------------------------- -->
+        <section class="block-video top50">
+            <div class="container">
+                <h2 class="block-video__title h2">Также у нас есть огромный спектр дополнительных услуг</h2>
+                <p class="block-video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, ac consequat
+                    malesuada pretium ut ac. Sit neque dictum eget sem egestas egestas. Fermentum viverra pharetra
+                    sollicitudin malesuada odio potenti quisque proin. Volutpat fusce semper aliquam ac. Molestie
+                    lobortis egestas curabitur vitae sit viverra consectetur eros. Orci, ullamcorper vulputate vulputate
+                    sed.
+                </p>
+                <p class="block-video__text">Mattis diam quis etiam amet nunc mauris. Facilisi viverra ultrices
+                    venenatis ut viverra vitae nunc accumsan, at. Amet, in quam mattis nam. Vel quis dictum turpis dui.
+                    Tincidunt dolor nulla sapien donec id fames id sit tortor. Lacinia vel a cum tellus nunc cras
+                    scelerisque. Sed viverra libero, proin tellus. Faucibus at quis arcu ornare nec augue nulla aenean.
+                    A vulputate non accumsan, nam libero lorem dictum. Ullamcorper fringilla velit ultrices id enim
+                    gravida massa metus, vehicula. Neque mattis placerat metus massa imperdiet ut gravida diam rhoncus.
+                    Sed mi aliquam cursus amet morbi pellentesque in feugiat. Nunc pretium purus nulla tempor sit
+                    pretium adipiscing elementum.</p>
+                <div class="block-video__video-wrap">
+                    <img src="img/services/block-video-bg.jpg" alt="" class="block-video__img">
+                    <div class="block-video__play">
+                        <svg width="73" height="85" viewBox="0 0 73 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M73 42.5L0.249996 84.5022L0.25 0.497765L73 42.5Z" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- grid-price-services----------------------------------------------------- -->
+        <section class="grid-price-services top50">
+            <div class="container">
+                @@include('./components/grid-price/grid-price.html')
+            </div>
+        </section>
+
+
+        <!-- advantage-services -------------------------------------------------------->
+        <section class="advantage-services top50">
+            <div class="container">
+                <h2 class="advantage-services__title h2">ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ</h2>
+                @@include('./components/cards-advantage/_cards-advantage.html')
+            </div>
+        </section>
+
+        <!-- writeus -------------------------------------------------------->
+        @@include('./components/writeus/_writeus.html')
+
+        @@include('_footer.html')
+
+        <!-- modal-order -->
+        @@include('./components/modal-order/_modal-order.html')
+
+    </div><!-- /wrapper -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

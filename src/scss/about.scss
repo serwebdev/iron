@@ -1,0 +1,379 @@
+.about {
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 47px;
+
+    @media (max-width: 500px) {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+
+    @media (max-width: 1100px) {
+      flex-wrap: wrap;
+      //   justify-content: center;
+    }
+    @media (max-width: 620px) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__content-col {
+    &:first-child {
+      flex: 0 1 598px;
+
+      @media (max-width: 1100px) {
+        flex-grow: 1;
+      }
+    }
+    &:last-child {
+      flex: 0 1 571px;
+
+      @media (max-width: 1100px) {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__img-text {
+    margin-bottom: 26px;
+    max-width: 626px;
+    width: 100%;
+  }
+
+  &__content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: $black;
+
+    @media (max-width: 500px) {
+      font-size: 15px;
+      line-height: 16px;
+      text-align: start;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+
+    @media (max-width: 1100px) {
+      //   margin: 0 auto;
+    }
+  }
+
+  &__text {
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+
+    -webkit-text-stroke-color: #cacaca;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 1220px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 620px) {
+      gap: 15px;
+    }
+  }
+
+  &__numbers-item {
+    flex: 0 1 23.7%;
+    min-width: 285px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgba(183, 183, 183, 0.25);
+    border-radius: 5px;
+    position: relative;
+    height: 128px;
+
+    @media (max-width: 620px) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__numbers-item-inner {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    padding: 20px 10px 20px 20px;
+  }
+
+  &__numbers-num {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 50px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    display: inline-block;
+  }
+
+  &__numbers-num--1 {
+    color: #e8f5ff;
+  }
+
+  &__numbers-num--2 {
+    // border: 1px solid #4FB5FF;
+    -webkit-text-stroke-color: $blue;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: auto;
+    height: auto;
+  }
+
+  &__numbers-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $black;
+    margin-top: 10px;
+  }
+}
+
+// mission=============================================================
+.mission {
+  &__title {
+    margin-bottom: 21px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    @media (max-width: 1200px) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__col--1 {
+    flex: 0 1 590px;
+    padding-top: 10px;
+
+    @media (max-width: 600px) {
+      padding-top: 0;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__col--2 {
+    flex: 0 1 557px;
+  }
+
+  &__text-border {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+
+    -webkit-text-stroke-color: #dedede;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 16px;
+      font-size: 27px;
+      line-height: 32px;
+    }
+    @media (max-width: 370px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: $black;
+
+    background: $white;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 31px 32px;
+    margin-bottom: 25px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 15px 15px;
+      text-align: start;
+    }
+  }
+
+  .ul-list {
+    padding: 0;
+
+    @media (max-width: 600px) {
+      padding-right: 15px;
+    }
+
+    &__list {
+      align-items: flex-start;
+
+      @media (max-width: 600px) {
+        margin-left: 15px;
+      }
+    }
+
+    &__img {
+    }
+
+    &__text {
+      @media (max-width: 600px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// how-work========================================================
+.how-work {
+  margin-top: 45px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// advantage-about=========================================================
+.advantage-about {
+  &__title {
+    margin-bottom: 35px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__row {
+    flex-direction: row-reverse;
+  }
+
+  &__col--1 {
+    padding-top: 0;
+    position: relative;
+    flex: 0 1 content;
+
+    @media (max-width: 1200px) {
+      align-self: flex-start;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      bottom: -5px;
+      left: 5px;
+      right: -5px;
+      border: 1px solid $blue;
+      border-radius: 5px;
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    border: none;
+    padding: 0;
+    text-align: start;
+  }
+
+  &__text--1 {
+    padding-right: 10px;
+
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+  }
+
+  &__text--2 {
+    margin-bottom: 0;
+    margin-top: 29px;
+
+    @media (max-width: 500px) {
+      padding: 0;
+      margin-top: 23px;
+      margin-bottom: 0;
+    }
+  }
+
+  .ul-list {
+    @media (max-width: 500px) {
+      padding-right: 0;
+    }
+
+    &__list {
+    }
+
+    &__img {
+    }
+
+    &__text {
+    }
+  }
+}
+
+// writeus-about================================================
+.writeus-about {
+  margin-top: 52px;
+
+  @media (max-width: 500px) {
+    margin-top: 22px;
+  }
+}

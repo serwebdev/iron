@@ -1,0 +1,142 @@
+.modal-phone {
+  .modal__content {
+    @media (max-width: 500px) {
+      padding: 25px 35px 25px 25px;
+    }
+  }
+  &__text,
+  &__input-text,
+  &__input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $black;
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__form {
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    span {
+      color: #ff4444;
+    }
+
+    &:first-child {
+      margin-bottom: 60px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__input-text {
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #868686;
+    height: 0;
+    outline: none;
+
+    &.show {
+      height: 31px;
+    }
+
+    &:focus {
+      border-bottom: 2px solid #868686;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__label-checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $black;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+    padding-left: 26px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    a {
+      font-weight: 500;
+      color: $black;
+      text-decoration: underline;
+      text-underline-offset: 7px;
+
+      @media (max-width: 500px) {
+        text-underline-offset: 3px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border: 1px solid $blue;
+      border-radius: 2px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+      height: 7px;
+      margin: auto;
+      background-image: url(../img/main-page/writeus-check.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &__checkbox:checked + .modal-phone__label-checkbox {
+    &::after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    padding: 18px 64px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,40 @@
+<div class="modal modal-order">
+    <div class="modal__body">
+        <button class="modal__btn">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15.5565" width="2" height="22" rx="1" transform="rotate(45 15.5565 0)" fill="#474747" />
+                <rect x="16.9706" y="15.5563" width="2" height="22" rx="1" transform="rotate(135 16.9706 15.5563)"
+                    fill="#474747" />
+            </svg>
+        </button>
+        <div class="modal__content">
+            <p class="writeus__text">Напишите нам и наш менеджер свяжется с вами в ближайшее время</p>
+            <form action="#" class="writeus__form">
+                <div class="writeus__input-box">
+                    <div class="writeus__input-wrap">
+                        <input type="text" name="name" class="writeus__input" required>
+                        <p class="writeus__input-placeholder">Ваше имя <span>*</span></p>
+                    </div>
+                    <div class="writeus__input-wrap">
+                        <input type="text" name="phone" class="writeus__input" required>
+                        <p class="writeus__input-placeholder">Ваш номер телефона <span>*</span></p>
+                    </div>
+                    <div class="writeus__input-wrap">
+                        <input type="text" name="email" class="writeus__input" placeholder="E-mail">
+                        <!-- <p class="writeus__input-placeholder">E-mail</p> -->
+                    </div>
+                </div>
+                <label class="writeus__label-textarea">
+                    Сообщение
+                    <textarea name="message" class="writeus__textarea"></textarea>
+                </label>
+                <input type="checkbox" name="policy-modal-order" class="writeus__checkbox modal-order__checkbox"
+                    id="modal-order__checkbox" checked required>
+                <label class="writeus__label" for="modal-order__checkbox">
+                    Я ознакомлен и соглашаюсь с <a href="#!">политикой конфиденциальности</a>
+                </label>
+                <button type="submit" class="writeus__btn btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>

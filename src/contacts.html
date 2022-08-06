@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+
+        <!-- breadcrumbs------------------------------------------------ -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    </li>—
+                    <li class="breadcrumbs__list-item">Контакты</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- contacts----------------------------------------------------- -->
+        <section class="contacts">
+            <div class="container">
+                <h1 class="contacts__title h2">Контакты</h1>
+                <div class="contacts__contacts">
+                    <div class="contacts__col">
+                        <div class="contacts__col-inner">
+                            <ul class="contacts__list">
+                                <li class="contacts__list-item">Телефон: <span>+7 (812) 123-45-67</span></li>
+                                <li class="contacts__list-item">Адрес: <span>192102, Санкт-Петербург, улица
+                                        Бухарестская,
+                                        дом 22,
+                                        корпус 2д, 4 этаж</span></li>
+                                <li class="contacts__list-item">Почта: <span>info@iron.su</span></li>
+                                <li class="contacts__list-item">График работы: <span>Пн-Пт: 09:00 - 18:00 / Сб-Вс: 11:00
+                                        -
+                                        16:00</span>
+                                </li>
+
+                                <li class="contacts__list-item contacts__list-item--title">Реквизиты</li>
+                                <li class="contacts__list-item"><span>ООО "АЙРОН"</span></li>
+                                <li class="contacts__list-item">Юридический адрес: <span>192102, г. Санкт-Петербург, ул.
+                                        Бухарестская, д. 22, корп. 2 литер Д, пом. 1Н</span></li>
+                                <li class="contacts__list-item">ИНН: <span>7816723705</span></li>
+                                <li class="contacts__list-item">ОГРН: <span>1217800165120</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="contacts__col">
+                        <div class="contacts__col-inner">
+                            <form action="#" class="contacts__form">
+                                <label class="contacts__form-label">
+                                    Ваше имя <span>*</span>
+                                    <input name="name" type="text" class="contacts__form-input" required>
+                                </label>
+                                <label class="contacts__form-label">
+                                    Ваш номер телефона <span>*</span>
+                                    <input name="phone" type="text" class="contacts__form-input" required>
+                                </label>
+                                <label class="contacts__form-label">
+                                    E-mail
+                                    <input name="email" type="text" class="contacts__form-input">
+                                </label>
+                                <label class="contacts__form-label contacts__form-label--textarea">
+                                    Сообщение
+                                    <textarea name="texarea" class="contacts__form-textarea"></textarea>
+                                </label>
+                                <input type="checkbox" name="chechbox" id="contacts-checkbox"
+                                    class="contacts__form-checkbox" required>
+                                <label for="contacts-checkbox" class="contacts__form-label--checkbox">
+                                    Я ознакомлен и соглашаюсь с <a href="#!">политикой конфиденциальности</a>
+                                </label>
+                                <button class="contacts__form-btn btn-min">ОТПРАВИТЬ ЗАЯВКУ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- maps -->
+        <section class="maps">
+            <div class="container">
+                <div class="maps__map">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+                            href="https://yandex.ru/maps/2/saint-petersburg/house/bukharestskaya_ulitsa_22k2/Z0kYdQFoS0UDQFtjfXR5eX9jYw==/?ll=30.367990%2C59.887463&utm_medium=mapframe&utm_source=maps&z=16.57"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Бухарестская улица, 22к2 —
+                            Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCURiEthPA" width="100%"
+                            height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <h2 class="maps__title h2">Завод металлоконструкций</h2>
+                <p class="maps__subtitle">Адрес: территория Ижорский Завод</p>
+                <div class="maps__map">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/org/izhorskiye_zavody/76341637009/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижорские заводы</a><a
+                            href="https://yandex.ru/maps/26081/kolpino/category/machine_building/184106628/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Машиностроительный завод в
+                            Колпино</a><a
+                            href="https://yandex.ru/maps/26081/kolpino/category/utilities_equipment/184107082/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:28px;">Энергетическое оборудование в
+                            Колпино</a><iframe src="https://yandex.ru/map-widget/v1/-/CCURiIqwpB" width="100%"
+                            height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        @@include('_footer.html')
+
+    </div><!-- /wrapper -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@import './base/fonts';
+@import './base/variables';
+@import './base/reset';
+@import './base/global';
+
+// Компоненты
+@import './header';
+@import '../components/modal-phone/modal-phone';
+@import '../components/modal-order/modal-order';
+@import '../components/grid-price/grid-price';
+@import '../components/ul-list/ul-list';
+@import '../components/steps/steps';
+@import '../components/cards-advantage/cards-advantage';
+@import '../components/writeus/_writeus';
+@import './footer';
+
+@import '../components/breadcrumbs/_breadcrumbs';
+
+// Страницы
+@import './index';
+@import './services';
+@import './contacts';
+@import './delivery';
+@import './about';

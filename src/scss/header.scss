@@ -1,0 +1,328 @@
+.header {
+  background: #ffffff;
+  box-shadow: 0px 5px 25px rgba(165, 165, 165, 0.25);
+  position: relative;
+  transition: 0.2s;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0 4px 0;
+    z-index: 2;
+  }
+
+  // .header__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 0 0;
+    margin-bottom: 15px;
+
+    @media (max-width: 1250px) {
+      padding: 20px 5px 18px 0;
+      margin-bottom: 0px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+
+    &.show {
+      @media (max-width: 1250px) {
+        padding: 16px 5px 15px 0;
+      }
+    }
+
+    &.fixed {
+      display: none;
+    }
+  }
+
+  // .header__top-logo-link
+
+  &__top-logo-link {
+    max-width: 128px;
+
+    @media (max-width: 1250px) {
+      max-width: 68px;
+    }
+  }
+
+  // .header__top-logo
+
+  &__top-logo {
+    max-width: 100%;
+  }
+
+  // .header__top-phone-link
+
+  &__top-phone-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $black;
+    padding-left: 24px;
+    background-image: url(../img/main-page/phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.2s;
+
+    @media (max-width: 1250px) {
+      display: none;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 1250px) {
+      display: block;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+
+    @media (max-width: 1250px) {
+      flex-direction: column;
+      padding: 0;
+      gap: 24px;
+      position: absolute;
+      left: 120%;
+      right: 0;
+      top: calc(100% - 1px);
+      background-color: $white;
+      z-index: 1;
+      transition: 0.5s;
+    }
+
+    &.show {
+      left: 0;
+    }
+  }
+
+  &__bottom-phone-wrap {
+    display: none;
+
+    @media (max-width: 1250px) {
+      display: block;
+      padding: 18px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: #f4f4f4;
+      margin: 15px -15px 0;
+      z-index: 1;
+    }
+  }
+
+  &__bottom-phone {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $black;
+    padding-left: 24px;
+    background-image: url(../img/main-page/phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  &__bottom-btn {
+    padding: 17px 36px;
+    border: 1px solid $blue;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: $blue;
+    transition: 0.2s;
+
+    @media (max-width: 1250px) {
+      margin-bottom: 25px;
+    }
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+// menu ================================================
+.menu {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+
+    @media (max-width: 1250px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &:hover > .menu__dropdown {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $black;
+    transition: 0.2s;
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @media (max-width: 1250px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .menu__item &:hover {
+      color: $blue;
+    }
+
+    svg {
+      transition: 0.2s;
+    }
+
+    &:hover svg path {
+      fill: $blue;
+    }
+
+    &:hover svg {
+      @media (max-width: 1250px) {
+        transform: rotate(0deg);
+      }
+    }
+
+    &.active {
+      color: $blueClick;
+    }
+  }
+
+  &__link-top-mobile svg {
+    @media (max-width: 1250px) {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__dropdown {
+    width: 306px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(114, 114, 114, 0.25);
+    border-radius: 10px;
+    padding: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 16px);
+    left: -15px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+    @media (max-width: 1250px) {
+      top: calc(100% + 25px);
+      left: 0;
+      box-shadow: none;
+      border-radius: 0;
+      border-top: 1px solid #c7c7c7;
+      border-bottom: 1px solid #c7c7c7;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1;
+
+      &::before {
+        height: 26px;
+        top: -26px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 16px;
+      left: 0;
+      top: -16px;
+    }
+
+    .menu__item {
+      margin-bottom: 25px;
+    }
+
+    .menu__item--last {
+      @media (max-width: 1250px) {
+        display: none;
+      }
+    }
+
+    .menu__link {
+      padding: 0 18px 0 15px;
+      justify-content: space-between;
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__dropdown--right {
+    top: -25px;
+    left: calc(100% + 4px);
+
+    @media (max-width: 1250px) {
+      border-bottom: none;
+
+      &::before {
+        width: 100%;
+        height: 26px;
+        top: -26px;
+        left: 0;
+      }
+    }
+
+    &::before {
+      width: 4px;
+      height: 100%;
+      left: -4px;
+      top: 0;
+    }
+  }
+}
