@@ -1,2 +1,2 @@
 # Верстка макета iron
-Прямая ссылка на проект: https://github.com/serwebdev/iron/dist
+Прямая ссылка на проект: https://serwebdev.github.io/iron/dist
