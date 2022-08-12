@@ -186,10 +186,6 @@ body {
   margin-bottom: 15px;
 }
 
-.header__top.fixed {
-  display: none;
-}
-
 .header__top-logo-link {
   max-width: 128px;
 }
@@ -245,6 +241,8 @@ body {
 
 .header__bottom.show {
   left: 0;
+  max-height: calc(100vh - 54px);
+  overflow: auto;
 }
 
 .header__bottom-phone-wrap {
@@ -2812,10 +2810,21 @@ body {
   margin-top: 52px;
 }
 
+@media (min-width: 1250px) {
+  .header__top.fixed {
+    display: none;
+  }
+}
+
 @media (max-width: 1250px) {
+  .header.fixed {
+    padding: 0px 0 0px 0;
+  }
+
   .header__top {
     padding: 20px 5px 18px 0;
     margin-bottom: 0px;
+    height: 54px;
   }
 
   .header__top.show {
@@ -2844,7 +2853,7 @@ body {
     position: absolute;
     left: 120%;
     right: 0;
-    top: calc(100% - 1px);
+    top: calc(100% - 0px);
     background-color: #fff;
     z-index: 1;
     -webkit-transition: 0.5s;

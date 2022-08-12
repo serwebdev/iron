@@ -11,6 +11,10 @@
     width: 100%;
     padding: 15px 0 4px 0;
     z-index: 2;
+
+    @media (max-width: 1250px) {
+      padding: 0px 0 0px 0;
+    }
   }
 
   // .header__top
@@ -25,6 +29,7 @@
     @media (max-width: 1250px) {
       padding: 20px 5px 18px 0;
       margin-bottom: 0px;
+      height: 54px;
     }
 
     @media (max-width: 600px) {
@@ -38,7 +43,9 @@
     }
 
     &.fixed {
-      display: none;
+      @media (min-width: 1250px) {
+        display: none;
+      }
     }
   }
 
@@ -106,7 +113,7 @@
       position: absolute;
       left: 120%;
       right: 0;
-      top: calc(100% - 1px);
+      top: calc(100% - 0px);
       background-color: $white;
       z-index: 1;
       transition: 0.5s;
@@ -114,6 +121,8 @@
 
     &.show {
       left: 0;
+      max-height: calc(100vh - 54px);
+      overflow: auto;
     }
   }
 
