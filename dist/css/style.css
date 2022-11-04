@@ -2890,6 +2890,7 @@ body {
     align-items: center;
     gap: 33px;
     width: 100%;
+    padding-top: 20px;
   }
 
   .menu__item {
